@@ -1,5 +1,12 @@
 package org.sebsy.demo.escaperooms.bll;
 
+import org.springframework.context.annotation.Primary;
+import org.springframework.context.annotation.Profile;
+import org.springframework.stereotype.Component;
+
+@Component("room1")
+@Primary
+@Profile("passage")
 public class Room1Service implements RoomService {
 
     public String entreeSalle() {
